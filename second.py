@@ -20,9 +20,21 @@ class Vehicle:
 
 
 tesla_model_s = Vehicle(4, 'electric', 5, 250)
-print(tesla_model_s.number_of_wheels)
+# print(tesla_model_s.number_of_wheels)
 
 tesla_model_s.number_of_wheels = 2
-print(tesla_model_s.number_of_wheels)
+# print(tesla_model_s.number_of_wheels)
 
 tesla_model_s.make_noice()
+
+
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+
+moin = Person("Moin ALI")
+moin.name = "Samiul"
+print(moin.name)
