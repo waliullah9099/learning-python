@@ -85,7 +85,18 @@ habiba = Person4('Habiba', 16)
 # print(habiba.get_age())
 
 
+# Inheritance 
 
+class Car:
+    def __init__(self, number_of_wheels, seating_capacity, maximum_velocity):
+        self.number_of_wheels = number_of_wheels
+        self.seating_capacity = seating_capacity
+        self.maximum_velocity = maximum_velocity
+
+my_car = Car(4, 5, 250)
+tahar_car = Car(2, 3, 5)
+print(my_car.number_of_wheels, my_car.seating_capacity)
+print(tahar_car.number_of_wheels, tahar_car.maximum_velocity, tahar_car.seating_capacity)
 
 
 
