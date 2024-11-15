@@ -37,4 +37,19 @@ class Person:
 
 moin = Person("Moin ALI")
 moin.name = "Samiul"
-print(moin.name)
+# print(moin.name)
+
+
+
+class Person2:
+    def __init__(self, first_name, email):
+        self.first_name = first_name
+        self._email = email
+
+    def update_email(self, new_email):
+        self._email = new_email
+
+tk = Person2('TK', "tk@mail.com")
+print(tk._email)
+tk.update_email("new_tk@mail.com")
+print(tk._email)
