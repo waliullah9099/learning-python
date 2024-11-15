@@ -50,6 +50,44 @@ class Person2:
         self._email = new_email
 
 tk = Person2('TK', "tk@mail.com")
-print(tk._email)
+# print(tk._email)
 tk.update_email("new_tk@mail.com")
-print(tk._email)
+# print(tk._email)
+
+# Public Method 
+
+class Person3:
+    def __init__(self, first_name, age):
+        self.first_name = first_name
+        self._age = age
+
+    def show_age(self):
+        return self._age
+
+habiba = Person3('Habiba', 16)
+# print(habiba.show_age())
+
+
+# Non-public Method 
+
+class Person4:
+    def __init__(self, first_name, age):
+        self.first_name = first_name
+        self._age = age
+
+    def get_age(self):
+        return self._show_age()
+
+    def _show_age(self):
+        return self._age
+
+habiba = Person4('Habiba', 16)
+# print(habiba.get_age())
+
+
+
+
+
+
+
+  
